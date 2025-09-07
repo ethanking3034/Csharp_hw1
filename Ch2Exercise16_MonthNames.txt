@@ -1,0 +1,33 @@
+using System;
+
+class MonthNames
+{
+    enum Month
+    {
+        JANUARY = 1,
+        FEBRUARY,
+        MARCH,
+        APRIL,
+        MAY,
+        JUNE,
+        JULY,
+        AUGUST,
+        SEPTEMBER,
+        OCTOBER,
+        NOVEMBER,
+        DECEMBER
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter a month number (1 to 12): ");
+        bool isValid = int.TryParse(Console.ReadLine(), out int monthNumber);
+
+        if (isValid && monthNumber >= 1 && monthNumber <= 12)
+        {
+            Month month = (Month)monthNumber;
+
+            Console.WriteLine($"The month is: {month}");
+        }
+     }
+}
