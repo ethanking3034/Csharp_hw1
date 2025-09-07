@@ -1,0 +1,21 @@
+using System;
+
+class MoveEstimator
+{
+    static void Main()
+    {
+        const double BASE_FEE = 200.00;
+        const double HOURLY_RATE = 150.00;
+        const double PER_MILE_RATE = 2.00;
+
+        Console.Write("Enter the estimated number of hours: ");
+        bool validHours = double.TryParse(Console.ReadLine(), out double hours);
+
+        Console.Write("Enter the estimated number of miles: ");
+        bool validMiles = double.TryParse(Console.ReadLine(), out double miles);
+
+        double totalCost = BASE_FEE + (hours * HOURLY_RATE) + (miles * PER_MILE_RATE);
+        
+        Console.WriteLine($"Estimated total moving cost: ${totalCost: }");
+    }
+}
