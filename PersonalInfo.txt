@@ -1,0 +1,18 @@
+using System;
+
+class PersonalInfo
+{
+    static void Main()
+    {
+        string name = "Ethan King";
+        string birthdate = "May 17, 1997";
+        string workPhone = "(727) 337-6752";
+        string cellPhone = "Same as above";
+
+        Console.WriteLine("Personal Information: ");
+        Console.WriteLine("Name: " {name});
+        Console.WriteLine("Birthdate: " {birthdate});
+        Console.WriteLine("Work Phone: " {workPhone});
+        Console.WriteLine("Cell Phone: " {cellPhone});
+    }
+}
