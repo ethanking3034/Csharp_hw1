@@ -1,0 +1,28 @@
+using System;
+
+class EggsInteractive
+{
+    static void Main()
+    {
+        int chicken1, chicken2, chicken3, chicken4;
+
+        Console.Write("Enter eggs laid by Chicken 1: ");
+        chicken1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter eggs laid by Chicken 2: ");
+        chicken2 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter eggs laid by Chicken 3: ");
+        chicken3 = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Enter eggs laid by Chicken 4: ");
+        chicken4 = Convert.ToInt32(Console.ReadLine());
+
+        int totalEggs = chicken1 + chicken2 + chicken3 + chicken4;
+        
+        int dozens = totalEggs / 12;
+        int remainingEggs = totalEggs % 12;
+       
+        Console.WriteLine($"Total eggs: {totalEggs} {dozens} dozens and {remainingEggs} eggs");
+    }
+}
