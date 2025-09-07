@@ -1,0 +1,16 @@
+using System;
+
+class StopSign
+{
+    static void Main()
+    {
+        Console.WriteLine("   XXXXXXX");
+        Console.WriteLine("  X       X");
+        Console.WriteLine(" X         X");
+        Console.WriteLine("X           X");
+        Console.WriteLine("X    STOP    X");
+        Console.WriteLine("X           X");
+        Console.WriteLine(" X         X");
+        Console.WriteLine("  XXXXXXXX");
+    }
+}
