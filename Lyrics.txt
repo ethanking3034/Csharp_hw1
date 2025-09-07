@@ -1,0 +1,12 @@
+using System;
+
+class Lyrics
+{
+    static void Main()
+    {
+        Console.WriteLine("Here comes the sun, doo-doo-doo-doo");
+        Console.WriteLine("Here comes the sun, and I say");
+        Console.WriteLine("It's all right");
+        Console.WriteLine("Little darling, it's been a long, cold, lonely winter");
+    }
+}
